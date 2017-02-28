@@ -29,7 +29,7 @@ public class MyStreamIoHandler extends StreamIoHandler{
 				//抛弃就得任务
 				new ThreadPoolExecutor.DiscardOldestPolicy());
 		FileOutputStream fos = null;
-		File receiveFile = new File("D:\\ztest\\ewq.rar");
+		File receiveFile = new File("D:\\ztest\\test.txt");
 		try{
 			fos = new FileOutputStream(receiveFile);
 		}catch(FileNotFoundException e){

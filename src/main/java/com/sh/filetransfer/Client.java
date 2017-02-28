@@ -34,7 +34,7 @@ public class Client {
 		IoSession session;
 		for(;;){
 			try{
-				ConnectFuture future = connector.connect(new InetSocketAddress("192.168.2.154", 9123));
+				ConnectFuture future = connector.connect(new InetSocketAddress("192.168.176.1", 9123));
 				future.awaitUninterruptibly();
 				session = future.getSession();
 				break;

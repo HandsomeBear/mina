@@ -36,7 +36,7 @@ public class Server {
 		acceptor.getFilterChain().addLast("logger", new LoggingFilter());
 		
 		acceptor.setHandler(new MyStreamIoHandler());
-		acceptor.getSessionConfig().setReadBufferSize(2048);
+		acceptor.getSessionConfig().setReadBufferSize(1024*10);
 		acceptor.getSessionConfig().setIdleTime(IdleStatus.BOTH_IDLE, 10);
 		acceptor.setDefaultLocalAddress(new InetSocketAddress(port));
 		acceptor.bind();

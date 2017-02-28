@@ -19,7 +19,7 @@ public class ClientStreamHandler extends StreamIoHandler{
 	protected void processStreamIo(IoSession session, InputStream in, OutputStream out) {
 		logger.info("Exxcute processStreamIo");
 		
-		File sendFile = new File("G:\\Bin.rar");
+		File sendFile = new File("G:\\test.txt");
 		FileInputStream fis = null;
 		try{
 			fis = new FileInputStream(sendFile);
